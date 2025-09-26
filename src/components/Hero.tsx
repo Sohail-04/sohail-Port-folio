@@ -1,22 +1,22 @@
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/sohail-profile.jpg";
-
 interface HeroProps {
   onSectionChange: (section: string) => void;
 }
-
-const Hero = ({ onSectionChange }: HeroProps) => {
+const Hero = ({
+  onSectionChange
+}: HeroProps) => {
   const scrollToSection = (sectionId: string) => {
     onSectionChange(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse"></div>
@@ -31,9 +31,9 @@ const Hero = ({ onSectionChange }: HeroProps) => {
         
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-[0.02]" style={{
-          backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
-          backgroundSize: '50px 50px'
-        }}></div>
+        backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
+        backgroundSize: '50px 50px'
+      }}></div>
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
@@ -62,52 +62,28 @@ const Hero = ({ onSectionChange }: HeroProps) => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button
-                onClick={() => scrollToSection("portfolio")}
-                size="lg"
-                className="bg-white text-primary hover:shadow-glow hover:scale-105 transition-all duration-300 group backdrop-blur-sm"
-              >
+              <Button onClick={() => scrollToSection("portfolio")} size="lg" className="bg-white text-primary hover:shadow-glow hover:scale-105 transition-all duration-300 group backdrop-blur-sm">
                 View My Work
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button
-                onClick={() => scrollToSection("contact")}
-                variant="outline"
-                size="lg"
-                className="border-white/30 text-white hover:bg-white/10 hover:scale-105 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
-              >
+              <Button onClick={() => scrollToSection("contact")} variant="outline" size="lg" className="border-white/30 hover:bg-white/10 hover:scale-105 hover:border-white/50 transition-all duration-300 backdrop-blur-sm text-slate-950">
                 Get In Touch
               </Button>
             </div>
 
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start space-x-4">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:text-accent hover:bg-white/10 transition-all duration-300"
-                asChild
-              >
+              <Button variant="ghost" size="icon" className="text-white hover:text-accent hover:bg-white/10 transition-all duration-300" asChild>
                 <a href="mailto:sohail@example.com" aria-label="Email">
                   <Mail className="h-5 w-5" />
                 </a>
               </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:text-accent hover:bg-white/10 transition-all duration-300"
-                asChild
-              >
+              <Button variant="ghost" size="icon" className="text-white hover:text-accent hover:bg-white/10 transition-all duration-300" asChild>
                 <a href="https://linkedin.com/in/sohailaftab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:text-accent hover:bg-white/10 transition-all duration-300"
-                asChild
-              >
+              <Button variant="ghost" size="icon" className="text-white hover:text-accent hover:bg-white/10 transition-all duration-300" asChild>
                 <a href="https://github.com/sohailaftab" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
@@ -128,11 +104,7 @@ const Hero = ({ onSectionChange }: HeroProps) => {
               
               {/* Image container with glass effect */}
               <div className="relative w-80 h-80 rounded-full overflow-hidden border-2 border-white/30 shadow-elegant backdrop-blur-sm hover:scale-105 transition-transform duration-300">
-                <img
-                  src={profileImage}
-                  alt="Sohail Aftab - Web Developer"
-                  className="w-full h-full object-cover"
-                />
+                <img src={profileImage} alt="Sohail Aftab - Web Developer" className="w-full h-full object-cover" />
                 
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
@@ -155,8 +127,6 @@ const Hero = ({ onSectionChange }: HeroProps) => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
