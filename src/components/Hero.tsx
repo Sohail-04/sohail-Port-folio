@@ -50,7 +50,7 @@ const Hero = ({
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
                 Hi, I'm{" "}
                 <span className="bg-gradient-accent bg-clip-text text-transparent animate-pulse">
-                  Sohail Aftab
+                  Sohail
                 </span>
               </h1>
               <h2 className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-6 font-light">
