@@ -1,6 +1,6 @@
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/sohail-profile.jpg";
+import profileImage from "@/assets/profile-new.jpg";
 interface HeroProps {
   onSectionChange: (section: string) => void;
 }
