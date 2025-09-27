@@ -49,7 +49,7 @@ const Hero = ({
             <div className="mb-8">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
                 Hi, I'm{" "}
-                <span className="bg-gradient-accent bg-clip-text text-transparent animate-pulse">
+                <span className="bg-gradient-accent bg-clip-text animate-pulse text-green-300">
                   Sohail
                 </span>
               </h1>
