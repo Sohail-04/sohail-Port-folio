@@ -48,19 +48,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "sohail.aftab@example.com",
-      link: "mailto:sohail.aftab@example.com"
+      value: "sohailaftab198@outlook.com",
+      link: "mailto:sohailaftab198@outlook.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+91 XXXXX XXXXX",
-      link: "tel:+91XXXXXXXXX"
+      value: "+91 9241603132",
+      link: "tel:+919241603132"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Chennai, Tamil Nadu, India",
+      value: "Ranchi, Jharkhand, India",
       link: null
     }
   ];
@@ -81,7 +81,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      url: "mailto:sohail.aftab@example.com",
+      url: "mailto:sohailaftab198@outlook.com",
       description: "Send me a direct message"
     }
   ];
